@@ -28,4 +28,20 @@ Set the canonical origin for metadata, RSS, robots, and the sitemap:
 NEXT_PUBLIC_SITE_URL=https://blog.alternatefutures.ai
 ```
 
-Build with `npm run build`. Production is deployed as the standalone `alternatefutures/blog-alternatefutures.ai` Vercel project, with `blog.alternatefutures.ai` as its canonical domain.
+Build with `npm run build`. Production is deployed on Alternate Clouds from the standalone `alternatefutures/blog-alternatefutures.ai` repository, with `blog.alternatefutures.ai` as its canonical domain.
+
+```bash
+acc services create \
+  --kind github \
+  --repo alternatefutures/blog-alternatefutures.ai \
+  --branch main \
+  --build-command "npm run build" \
+  --start-command "npm run start" \
+  --name alternate-futures-blog \
+  --spend budget \
+  --budget-total 20 \
+  --env NEXT_PUBLIC_SITE_URL=https://blog.alternatefutures.ai \
+  --yes
+```
+
+Do not deploy this site to Vercel or another third-party application platform. Alternate Clouds is the production target for Alternate Futures properties.
