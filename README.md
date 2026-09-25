@@ -30,17 +30,21 @@ NEXT_PUBLIC_SITE_URL=https://blog.alternatefutures.ai
 
 Build with `npm run build`. Production is deployed on Alternate Clouds from the standalone `alternatefutures/blog-alternatefutures.ai` repository, with `blog.alternatefutures.ai` as its canonical domain.
 
+Build and publish the production image for `linux/amd64`, then deploy its immutable digest:
+
 ```bash
+docker buildx build \
+  --platform linux/amd64 \
+  --tag ghcr.io/alternatefutures/blog-alternatefutures.ai:latest \
+  --push .
+
 acc services create \
-  --kind github \
-  --repo alternatefutures/blog-alternatefutures.ai \
-  --branch main \
-  --build-command "npm run build" \
-  --start-command "npm run start" \
-  --name alternate-futures-blog \
+  --kind docker \
+  --image ghcr.io/alternatefutures/blog-alternatefutures.ai@sha256:<digest> \
+  --port 3000 \
+  --name blog \
   --spend budget \
   --budget-total 20 \
-  --env NEXT_PUBLIC_SITE_URL=https://blog.alternatefutures.ai \
   --yes
 ```
 
