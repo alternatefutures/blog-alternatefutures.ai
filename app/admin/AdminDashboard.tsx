@@ -36,7 +36,7 @@ export function AdminDashboard({ initialPosts }: { initialPosts: BlogPost[] }) {
         <div>
           <Link href="/" className="back-link"><ArrowLeft size={16} /> Blog preview</Link>
           <h1>Review desk</h1>
-          <p>Three launch drafts, held locally until you approve them.</p>
+          <p>Review and manage articles in the local content repository.</p>
         </div>
         <button className="button-primary" onClick={createDraft} disabled={creating}>
           <FilePlus2 size={17} /> {creating ? "Creating..." : "New draft"}

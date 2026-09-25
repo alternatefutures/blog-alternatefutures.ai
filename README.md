@@ -18,7 +18,7 @@ The admin and its write endpoints deliberately return unavailable responses in p
 
 ## Content model
 
-Each post includes Markdown content, editorial review notes, publication status, metadata, tags, and a first-party cover image. The first three guides are seeded as drafts and must be reviewed before publication.
+Each post includes Markdown content, editorial review notes, publication status, metadata, tags, and a first-party cover image. The launch collection is stored in `content/posts.json` and published through Git.
 
 ## Production
 
@@ -28,4 +28,4 @@ Set the canonical origin for metadata, RSS, robots, and the sitemap:
 NEXT_PUBLIC_SITE_URL=https://blog.alternatefutures.ai
 ```
 
-Build with `npm run build`. After deploying the standalone repository, point `blog.alternatefutures.ai` to the deployment and update the main site's practical-guide links.
+Build with `npm run build`. Production is deployed as the standalone `alternatefutures/blog-alternatefutures.ai` Vercel project, with `blog.alternatefutures.ai` as its canonical domain.
