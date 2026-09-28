@@ -9,6 +9,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-links">
         <Link href="/">Blog</Link>
+        <Link href="/privacy">Privacy</Link>
         <a href="https://www.alternatefutures.ai">Alternate Futures</a>
         <a href="/rss.xml">RSS</a>
       </div>

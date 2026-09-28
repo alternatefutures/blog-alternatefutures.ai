@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import "@/components/GoogleAnalytics.css";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://blog.alternatefutures.ai";
@@ -35,7 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Suspense fallback={null}>
+          <GoogleAnalytics />
+        </Suspense>
+      </body>
     </html>
   );
 }

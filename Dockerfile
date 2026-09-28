@@ -5,8 +5,10 @@ RUN npm ci
 
 FROM node:22-alpine AS builder
 WORKDIR /app
+ARG NEXT_PUBLIC_GA_MEASUREMENT_ID=G-2PDRFVML9M
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_PUBLIC_SITE_URL=https://blog.alternatefutures.ai
+ENV NEXT_PUBLIC_GA_MEASUREMENT_ID=$NEXT_PUBLIC_GA_MEASUREMENT_ID
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY . .
 RUN npm run build
