@@ -515,9 +515,10 @@ textarea:focus-visible {
 .article-body {
   max-width: 720px;
   margin: 0 auto;
-  font-family: "Instrument Serif", Georgia, serif;
-  font-size: 20px;
-  line-height: 1.65;
+  /* Brand guide: Instrument Serif is accent only -- never body text or UI. */
+  font-family: "Instrument Sans", system-ui, -apple-system, sans-serif;
+  font-size: 19px;
+  line-height: 1.7;
 }
 
 .article-body > :first-child {

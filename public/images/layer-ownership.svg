@@ -1,46 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-labelledby="loT loD">
-<title id="loT">Every layer was already someone&#8217;s product</title>
-<desc id="loD">Training data, compute, the runtime and the hardware underneath were each owned or priced by someone else, which is why standards written on top of them are advisory.</desc>
-<defs><style>
-  .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
-  .h{font-weight:600;fill:#0000AF}.b{font-weight:600;fill:#14131A}
-  .m{font-weight:400;fill:#5C5866}.t{font-weight:600;fill:#BE4200;letter-spacing:.08em}
-</style></defs>
-<rect width="1200" height="760" fill="#F9F5EE"/>
-<text class="s h" x="72" y="76" font-size="30">Every layer was already someone&#8217;s product</text>
-<text class="s m" x="72" y="108" font-size="17">What I ran into when the standards work needed somewhere to run</text>
-<line x1="72" y1="132" x2="1128" y2="132" stroke="#E2DBCD" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700" role="img" aria-labelledby="loT loD">
+<title id="loT">Standards have nothing to stand on</title>
+<desc id="loD">The standards layer floats, unanchored, above four solid layers — training data, compute, runtime and hardware — each of which is already owned upstream.</desc>
+<defs>
+  <marker id="dn" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+    <path d="M0 0 L5 10 L10 0" fill="none" stroke="#BE4200" stroke-width="2"/>
+  </marker>
+  <style>
+    .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+    .h{font-weight:600;fill:#0000AF}.m{font-weight:400;fill:#5C5866}
+    .lay{font-weight:600;fill:#FFFFFF}.sub{font-weight:400;fill:#C3C9FF}
+    .t{font-weight:600;fill:#BE4200}
+  </style>
+</defs>
+<rect width="900" height="700" fill="#F9F5EE"/>
 
+<text class="s h" x="56" y="58" font-size="34">Standards have nothing to stand on</text>
+<text class="s m" x="56" y="90" font-size="19">Every layer underneath was already someone else&#8217;s product</text>
+<line x1="56" y1="112" x2="844" y2="112" stroke="#E2DBCD" stroke-width="1"/>
+
+<!-- the weightless layer -->
+<rect x="56" y="142" width="672" height="66" rx="8" fill="none" stroke="#BE4200" stroke-width="2.5" stroke-dasharray="9 7"/>
+<text class="s t" x="84" y="183" font-size="25">The standards you want to set</text>
+<text class="s t" x="756" y="170" font-size="16">no</text>
+<text class="s t" x="756" y="190" font-size="16">anchor</text>
+
+<path d="M392 214 V238" stroke="#BE4200" stroke-width="2.5" stroke-dasharray="5 5" fill="none"/>
+<path d="M383 234 L392 246 L401 234" stroke="#BE4200" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- the owned stack -->
 <g>
-  <rect x="72" y="176" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
-  <rect x="72" y="176" width="4" height="96" rx="2" fill="#BE4200"/>
-  <text class="s b" x="108" y="218" font-size="20">Training data</text>
-  <text class="s m" x="108" y="244" font-size="16">an asset on someone else&#8217;s balance sheet</text>
+  <rect x="56" y="254" width="672" height="84" rx="8" fill="#000AFF"/>
+  <text class="s lay" x="84" y="292" font-size="26">Training data</text>
+  <text class="s sub" x="84" y="320" font-size="19">someone else&#8217;s balance sheet</text>
 </g>
 <g>
-  <rect x="72" y="292" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
-  <rect x="72" y="292" width="4" height="96" rx="2" fill="#BE4200"/>
-  <text class="s b" x="108" y="334" font-size="20">Compute</text>
-  <text class="s m" x="108" y="360" font-size="16">a line item priced by three companies&#8217; capacity planning</text>
+  <rect x="56" y="348" width="672" height="84" rx="8" fill="#000AFF"/>
+  <text class="s lay" x="84" y="386" font-size="26">Compute</text>
+  <text class="s sub" x="84" y="414" font-size="19">priced by three companies</text>
 </g>
 <g>
-  <rect x="72" y="408" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
-  <rect x="72" y="408" width="4" height="96" rx="2" fill="#BE4200"/>
-  <text class="s b" x="108" y="450" font-size="20">Runtime</text>
-  <text class="s m" x="108" y="476" font-size="16">a distribution channel dressed as an SDK &#8212; and acquired, reliably, in the end</text>
+  <rect x="56" y="442" width="672" height="84" rx="8" fill="#000AFF"/>
+  <text class="s lay" x="84" y="480" font-size="26">Runtime</text>
+  <text class="s sub" x="84" y="508" font-size="19">an SDK that gets acquired</text>
 </g>
 <g>
-  <rect x="72" y="524" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
-  <rect x="72" y="524" width="4" height="96" rx="2" fill="#BE4200"/>
-  <text class="s b" x="108" y="566" font-size="20">Hardware</text>
-  <text class="s m" x="108" y="592" font-size="16">a power contract, a jurisdiction, and someone else&#8217;s siting decision</text>
+  <rect x="56" y="536" width="672" height="84" rx="8" fill="#0000AF"/>
+  <text class="s lay" x="84" y="574" font-size="26">Hardware</text>
+  <text class="s sub" x="84" y="602" font-size="19">a power contract and a jurisdiction</text>
 </g>
 
-<line x1="1082" y1="176" x2="1082" y2="620" stroke="#BE4200" stroke-width="1.5"/>
-<path d="M1082 176 h-10 M1082 620 h-10" stroke="#BE4200" stroke-width="1.5"/>
-<text class="s t" x="1106" y="398" font-size="13" text-anchor="middle" transform="rotate(90 1106 398)">NOT OURS TO SET TERMS ON</text>
+<line x1="756" y1="254" x2="756" y2="620" stroke="#BE4200" stroke-width="2.5"/>
+<path d="M756 254 h-12 M756 620 h-12" stroke="#BE4200" stroke-width="2.5"/>
+<text class="s t" x="790" y="437" font-size="17" text-anchor="middle" letter-spacing=".1em" transform="rotate(90 790 437)">OWNED UPSTREAM</text>
 
-<line x1="72" y1="672" x2="1128" y2="672" stroke="#E2DBCD" stroke-width="1"/>
-<text class="s h" x="72" y="712" font-size="19">Standards without owned infrastructure are advisory.</text>
-<text class="s m" x="72" y="738" font-size="15">Publish the most rigorous benchmark in the world, run it on rented compute, and you have written a strongly worded letter, nothing more.</text>
+<line x1="56" y1="650" x2="844" y2="650" stroke="#E2DBCD" stroke-width="1"/>
+<text class="s h" x="56" y="682" font-size="21">Publish the benchmark, rent the compute, and you have written a letter.</text>
 </svg>

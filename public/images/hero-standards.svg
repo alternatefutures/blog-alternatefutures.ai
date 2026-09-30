@@ -1,41 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="hT hD">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1040" width="1600" height="1040" role="img" aria-labelledby="hT hD">
 <title id="hT">I Set Out to Write Standards. I Ended Up Building a Cloud.</title>
-<desc id="hD">Alternate Futures founder essay cover. Brand Blue ground with cropped rings in the corners and scattered four-pointed stars.</desc>
+<desc id="hD">Alternate Futures founder essay cover. Brand Blue ground with cropped rings at the corners and scattered four-pointed stars.</desc>
 <defs>
   <path id="afStar" d="M14.4727 0.337813C14.5286 -0.112604 15.2106 -0.112604 15.2664 0.337813L15.7342 4.1164C16.3383 8.99558 20.3524 12.8424 25.4437 13.4214L29.3866 13.8697C29.8566 13.9232 29.8566 14.5768 29.3866 14.6303L25.4437 15.0786C20.3524 15.6576 16.3383 19.5044 15.7342 24.3836L15.2664 28.1621C15.2106 28.6126 14.5286 28.6126 14.4727 28.1621L14.0049 24.3836C13.4008 19.5044 9.38669 15.6576 4.29538 15.0786L0.3525 14.6303C-0.1175 14.5768 -0.1175 13.9232 0.3525 13.8697L4.29538 13.4214C9.38669 12.8424 13.4008 8.99558 14.0049 4.1164L14.4727 0.337813Z"/>
-  <clipPath id="frame"><rect width="1600" height="900"/></clipPath>
+  <clipPath id="frame"><rect width="1600" height="1040"/></clipPath>
   <style>
     .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
     .serif{font-family:'Instrument Serif',Georgia,'Times New Roman',serif}
   </style>
 </defs>
-
-<rect width="1600" height="900" fill="#000AFF"/>
-
+<rect width="1600" height="1040" fill="#000AFF"/>
 <g clip-path="url(#frame)">
-  <!-- rings: corner decorations, partially cropped by the frame (max 2 motif types: rings + stars) -->
-  <circle cx="1512" cy="118" r="210" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.16"/>
-  <circle cx="1512" cy="118" r="128" fill="none" stroke="#FFC7AA" stroke-width="4" opacity="0.18"/>
-  <circle cx="72"  cy="838" r="188" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.12"/>
-  <circle cx="1392" cy="812" r="96"  fill="none" stroke="#A5B2FF" stroke-width="4" opacity="0.20"/>
-
-  <!-- stars: 4, mixed sizes, scattered asymmetrically, never gridded -->
-  <use href="#afStar" fill="#FFC7AA" opacity="0.20" transform="translate(1246,206) scale(4.1)"/>
-  <use href="#afStar" fill="#FFFFFF" opacity="0.15" transform="translate(196,168) scale(2.4)"/>
-  <use href="#afStar" fill="#FFFFFF" opacity="0.13" transform="translate(1444,592) scale(1.5)"/>
-  <use href="#afStar" fill="#A5B2FF" opacity="0.20" transform="translate(742,172) scale(1.9)"/>
+  <circle cx="1536" cy="104" r="232" fill="none" stroke="#FFFFFF" stroke-width="5" opacity="0.15"/>
+  <circle cx="1536" cy="104" r="140" fill="none" stroke="#FFC7AA" stroke-width="5" opacity="0.18"/>
+  <circle cx="58"   cy="986" r="206" fill="none" stroke="#FFFFFF" stroke-width="5" opacity="0.11"/>
+  <circle cx="1418" cy="946" r="118" fill="none" stroke="#A5B2FF" stroke-width="5" opacity="0.19"/>
+  <use href="#afStar" fill="#FFC7AA" opacity="0.20" transform="translate(1258,286) scale(4.3)"/>
+  <use href="#afStar" fill="#FFFFFF" opacity="0.14" transform="translate(212,196) scale(2.5)"/>
+  <use href="#afStar" fill="#A5B2FF" opacity="0.19" transform="translate(806,172) scale(1.9)"/>
+  <use href="#afStar" fill="#FFFFFF" opacity="0.13" transform="translate(1462,690) scale(1.5)"/>
 </g>
 
-<text class="s" x="112" y="228" font-size="17" font-weight="600" fill="#FFC7AA" letter-spacing="0.16em">ALTERNATE FUTURES &#183; FOUNDER ESSAY</text>
+<text class="s" x="132" y="272" font-size="19" font-weight="600" fill="#FFC7AA" letter-spacing="0.16em">ALTERNATE FUTURES &#183; FOUNDER ESSAY</text>
 
-<text class="s" x="112" y="360" font-size="76" font-weight="600" fill="#FFFFFF" letter-spacing="-0.018em">I Set Out to Write</text>
-<text class="s" x="112" y="452" font-size="76" font-weight="600" fill="#FFFFFF" letter-spacing="-0.018em">Standards. I Ended Up</text>
-<text class="s" x="112" y="544" font-size="76" font-weight="600" fill="#FFFFFF" letter-spacing="-0.018em">Building a Cloud.</text>
+<text class="s" x="132" y="424" font-size="84" font-weight="600" fill="#FFFFFF" letter-spacing="-0.018em">I Set Out to Write Standards.</text>
+<text class="s" x="132" y="528" font-size="84" font-weight="600" fill="#FFFFFF" letter-spacing="-0.018em">I Ended Up Building a Cloud.</text>
 
-<line x1="112" y1="612" x2="292" y2="612" stroke="#FFC7AA" stroke-width="3"/>
+<line x1="132" y1="600" x2="316" y2="600" stroke="#FFC7AA" stroke-width="3"/>
 
-<text class="serif" x="112" y="686" font-size="34" font-style="italic" fill="#FFFFFF" opacity="0.94">You cannot set standards for technology you don&#8217;t</text>
-<text class="serif" x="112" y="730" font-size="34" font-style="italic" fill="#FFFFFF" opacity="0.94">control the means of producing.</text>
+<text class="serif" x="132" y="680" font-size="36" font-style="italic" fill="#FFFFFF" opacity="0.95">You cannot set standards for technology</text>
+<text class="serif" x="132" y="728" font-size="36" font-style="italic" fill="#FFFFFF" opacity="0.95">you don&#8217;t control the means of producing.</text>
 
-<text class="s" x="112" y="806" font-size="19" font-weight="400" fill="#A5B2FF">Angela Steffens</text>
+<text class="s" x="132" y="814" font-size="21" font-weight="400" fill="#A5B2FF">Angela Steffens</text>
 </svg>
