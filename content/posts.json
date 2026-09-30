@@ -332,6 +332,8 @@
       "",
       "Here's what I ran into.",
       "",
+      "![Four stacked layers — training data, compute, runtime, hardware — each labelled with who already owns it, bracketed as “not ours to set terms on”.](/images/layer-ownership.svg)",
+      "",
       "Standards without owned infrastructure are advisory. You can publish the most rigorous benchmark in the world, and if it runs on compute rented from the three companies whose behavior the benchmark exists to constrain, you have written a strongly worded letter, nothing more.",
       "",
       "Every layer I needed was already someone's product. Training data was an asset on someone else's balance sheet. Compute was a line item priced by those same three companies' capacity planning. The runtime was a distribution channel dressed as an SDK. Every \"open\" agent framework I evaluated followed the same structure: open-source the framework, centralize the hosting, monetize the lock-in. And it ends the same way every time — acquired by a hyperscaler, or absorbed into one of the big closed labs. That's not a criticism of those companies. It's a rational business model with a predictable exit. It's just incompatible with anyone downstream setting terms, because the company you made your arrangement with is rarely the company that ends up holding it.",
@@ -360,6 +362,8 @@
       "",
       "If you take \"own the means of production\" seriously, you eventually run out of software to own. Underneath the runtime is a rack. Underneath the rack is a power contract, a jurisdiction, and someone else's siting decision.",
       "",
+      "![Two panels comparing cooling: a rack-scale GPU configuration requiring liquid and a supporting cooling plant, versus an air-cooled rack with airflow straight through.](/images/air-vs-liquid.svg)",
+      "",
       "So we're designing transportable, dedicated AI-inference modules — containerized datacenters — built around SambaNova's accelerator racks, in three tiers, for both connected and air-gapped sites. The thesis is unromantic: put dedicated inference capacity where the power actually is. Power that's stranded, constrained, cheap, or jurisdictionally controlled. The platform brings the software, orchestration, billing, and demand. The module brings the floor.",
       "",
       "They're air-cooled, and that's most of why we went to SambaNova instead of building around GPUs. Put the current generation side by side. NVIDIA's B300 runs at 1,400 W per GPU and needs liquid cooling in its rack-scale configurations — there is no fully air-cooled NVL72. A SambaNova rack averages around 20 kW and stays inside an air-cooled envelope. For a datacenter you intend to truck to a site and set down next to a substation, that is not a performance footnote. It's the difference between a product and a plumbing project. No liquid loop, no water running through the racks — a sealed internal air path and air-to-air heat exchange, which is also worth saying plainly while the industry argues about datacenter water consumption.",
@@ -383,6 +387,8 @@
       "## The loop",
       "",
       "Which is exactly why the module isn't the product. The loop is.",
+      "",
+      "![A four-step cycle: module deployed, runs Clouds software, idle capacity sold, network gets denser, and back to the next module being easier to justify.](/images/the-loop.svg)",
       "",
       "The shape of it: we sell the module. It runs our software. The owner uses the capacity they need — and when they aren't using it, the control plane sells what's idle. That's what Clouds is for. It's the demand side: the thing that turns somebody's unused capacity at two in the morning into revenue for them, and into supply for everyone else on the platform. The owner stops being purely a consumer of compute and becomes a supplier of it.",
       "",
@@ -426,8 +432,8 @@
       "",
       "*Angela Steffens is co-founder and CEO/CTO of Alternate Futures. Olympia, WA. [alternatefutures.ai](https://alternatefutures.ai)*"
     ],
-    "coverImage": "/images/network-diagram.svg",
-    "coverAlt": "Decentralized network topology",
+    "coverImage": "/images/the-loop.svg",
+    "coverAlt": "The loop: module deployed, runs Clouds software, idle capacity sold, network gets denser",
     "status": "draft",
     "authorName": "Angela Steffens",
     "tags": [
@@ -444,7 +450,7 @@
     "reviewNotes": [
       "Partner naming: article names SambaNova. Public naming rights are still listed as to-secure in docs/hardware/sambanova-partnership-terms.md item 12. Confirm before publishing.",
       "Settlement chain is described, not named, at Angela's request. Name it when she is ready.",
-      "Cover image is a placeholder — needs real art before publish.",
+      "Three brand SVG diagrams added (the-loop, layer-ownership, air-vs-liquid). Cover uses the-loop. Amy should sign off on the palette use before publish.",
       "Brand review plus adversarial fact-check required before status flips to published, per standing policy on buyer-facing claims.",
       "Companion piece 'This Is Not a Manifesto' is slated for Angela's personal site; cross-link once it is live.",
       "Hardware specs re-baseline is open (alternatefutures/admin#969) — article cites no chip model, so it is unaffected, but re-check if that changes."

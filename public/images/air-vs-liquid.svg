@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" role="img" aria-labelledby="avT avD">
+<title id="avT">Why it fits in a box</title>
+<desc id="avD">Rack-scale GPU configurations require liquid cooling and a supporting plant; the accelerator racks in our modules are air-cooled, which is what makes a transportable module possible.</desc>
+<defs>
+  <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0 0 L10 5 L0 10 z" fill="#000AFF"/></marker>
+  <style>
+    .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+    .h{font-weight:600;fill:#0000AF}.b{font-weight:600;fill:#14131A}
+    .m{font-weight:400;fill:#5C5866}
+    .eyT{font-weight:600;fill:#BE4200;letter-spacing:.1em}
+    .eyB{font-weight:600;fill:#000AFF;letter-spacing:.1em}
+  </style>
+</defs>
+<rect width="1200" height="780" fill="#F9F5EE"/>
+<text class="s h" x="72" y="76" font-size="30">Why it fits in a box</text>
+<text class="s m" x="72" y="108" font-size="17">The constraint doing more work in this design than any benchmark</text>
+<line x1="72" y1="132" x2="1128" y2="132" stroke="#E2DBCD" stroke-width="1"/>
+
+<!-- LEFT: liquid -->
+<rect x="72" y="168" width="500" height="470" rx="10" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
+<text class="s eyT" x="104" y="208" font-size="12">RACK-SCALE GPU</text>
+<text class="s b" x="104" y="240" font-size="21">Liquid required</text>
+<g stroke="#BE4200" stroke-width="2" fill="none">
+  <path d="M236 300 h-52 a16 16 0 0 0 -16 16 v56 a16 16 0 0 0 16 16 h52"/>
+  <path d="M236 330 h-30 a10 10 0 0 0 -10 10 v8 a10 10 0 0 0 10 10 h30"/>
+</g>
+<rect x="236" y="272" width="112" height="152" rx="6" fill="#F9F5EE" stroke="#14131A" stroke-width="1.5"/>
+<g stroke="#E2DBCD" stroke-width="1.5">
+  <line x1="248" y1="300" x2="336" y2="300"/><line x1="248" y1="328" x2="336" y2="328"/>
+  <line x1="248" y1="356" x2="336" y2="356"/><line x1="248" y1="384" x2="336" y2="384"/>
+</g>
+<rect x="404" y="308" width="92" height="80" rx="6" fill="#F9F5EE" stroke="#BE4200" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text class="s m" x="450" y="344" font-size="12" text-anchor="middle">cooling</text>
+<text class="s m" x="450" y="360" font-size="12" text-anchor="middle">plant</text>
+<path d="M348 330 h56 M348 366 h56" stroke="#BE4200" stroke-width="2" fill="none"/>
+<text class="s m" x="104" y="478" font-size="16">1,400 W per GPU</text>
+<text class="s m" x="104" y="506" font-size="16">Liquid cooling in its rack-scale configurations</text>
+<text class="s m" x="104" y="534" font-size="16">No fully air-cooled NVL72</text>
+<rect x="104" y="562" width="436" height="48" rx="6" fill="#FBEFE7"/>
+<text class="s b" x="124" y="592" font-size="17" fill="#BE4200">You are shipping a plumbing project.</text>
+
+<!-- RIGHT: air -->
+<rect x="628" y="168" width="500" height="470" rx="10" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
+<text class="s eyB" x="660" y="208" font-size="12">OUR MODULES</text>
+<text class="s b" x="660" y="240" font-size="21">Air-cooled</text>
+<g stroke="#000AFF" stroke-width="2" fill="none" marker-end="url(#fa)">
+  <path d="M700 312 h74"/><path d="M700 348 h74"/><path d="M700 384 h74"/>
+</g>
+<rect x="792" y="272" width="112" height="152" rx="6" fill="#F9F5EE" stroke="#14131A" stroke-width="1.5"/>
+<g stroke="#E2DBCD" stroke-width="1.5">
+  <line x1="804" y1="300" x2="892" y2="300"/><line x1="804" y1="328" x2="892" y2="328"/>
+  <line x1="804" y1="356" x2="892" y2="356"/><line x1="804" y1="384" x2="892" y2="384"/>
+</g>
+<g stroke="#000AFF" stroke-width="2" fill="none" marker-end="url(#fa)">
+  <path d="M912 312 h74"/><path d="M912 348 h74"/><path d="M912 384 h74"/>
+</g>
+<text class="s m" x="660" y="478" font-size="16">~20 kW average per rack</text>
+<text class="s m" x="660" y="506" font-size="16">Sealed internal air path, air-to-air exchange</text>
+<text class="s m" x="660" y="534" font-size="16">No liquid loop, no water through the racks</text>
+<rect x="660" y="562" width="436" height="48" rx="6" fill="#ECEDFF"/>
+<text class="s b" x="680" y="592" font-size="17" fill="#000AFF">You are shipping a product.</text>
+
+<line x1="72" y1="682" x2="1128" y2="682" stroke="#E2DBCD" stroke-width="1"/>
+<text class="s m" x="72" y="716" font-size="14">Figures: NVIDIA GB300 NVL72 rack-scale configuration; SambaNova&#8217;s published SN50 rack average.</text>
+<text class="s m" x="72" y="740" font-size="14">This compares <tspan font-weight="600">cooling requirements, not performance</tspan> &#8212; the two accelerators are good at different halves of the job.</text>
+</svg>

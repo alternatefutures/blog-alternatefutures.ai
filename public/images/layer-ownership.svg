@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760" role="img" aria-labelledby="loT loD">
+<title id="loT">Every layer was already someone&#8217;s product</title>
+<desc id="loD">Training data, compute, the runtime and the hardware underneath were each owned or priced by someone else, which is why standards written on top of them are advisory.</desc>
+<defs><style>
+  .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+  .h{font-weight:600;fill:#0000AF}.b{font-weight:600;fill:#14131A}
+  .m{font-weight:400;fill:#5C5866}.t{font-weight:600;fill:#BE4200;letter-spacing:.08em}
+</style></defs>
+<rect width="1200" height="760" fill="#F9F5EE"/>
+<text class="s h" x="72" y="76" font-size="30">Every layer was already someone&#8217;s product</text>
+<text class="s m" x="72" y="108" font-size="17">What I ran into when the standards work needed somewhere to run</text>
+<line x1="72" y1="132" x2="1128" y2="132" stroke="#E2DBCD" stroke-width="1"/>
+
+<g>
+  <rect x="72" y="176" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
+  <rect x="72" y="176" width="4" height="96" rx="2" fill="#BE4200"/>
+  <text class="s b" x="108" y="218" font-size="20">Training data</text>
+  <text class="s m" x="108" y="244" font-size="16">an asset on someone else&#8217;s balance sheet</text>
+</g>
+<g>
+  <rect x="72" y="292" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
+  <rect x="72" y="292" width="4" height="96" rx="2" fill="#BE4200"/>
+  <text class="s b" x="108" y="334" font-size="20">Compute</text>
+  <text class="s m" x="108" y="360" font-size="16">a line item priced by three companies&#8217; capacity planning</text>
+</g>
+<g>
+  <rect x="72" y="408" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
+  <rect x="72" y="408" width="4" height="96" rx="2" fill="#BE4200"/>
+  <text class="s b" x="108" y="450" font-size="20">Runtime</text>
+  <text class="s m" x="108" y="476" font-size="16">a distribution channel dressed as an SDK &#8212; and acquired, reliably, in the end</text>
+</g>
+<g>
+  <rect x="72" y="524" width="980" height="96" rx="9" fill="#FFFFFF" stroke="#E2DBCD" stroke-width="1.5"/>
+  <rect x="72" y="524" width="4" height="96" rx="2" fill="#BE4200"/>
+  <text class="s b" x="108" y="566" font-size="20">Hardware</text>
+  <text class="s m" x="108" y="592" font-size="16">a power contract, a jurisdiction, and someone else&#8217;s siting decision</text>
+</g>
+
+<line x1="1082" y1="176" x2="1082" y2="620" stroke="#BE4200" stroke-width="1.5"/>
+<path d="M1082 176 h-10 M1082 620 h-10" stroke="#BE4200" stroke-width="1.5"/>
+<text class="s t" x="1106" y="398" font-size="13" text-anchor="middle" transform="rotate(90 1106 398)">NOT OURS TO SET TERMS ON</text>
+
+<line x1="72" y1="672" x2="1128" y2="672" stroke="#E2DBCD" stroke-width="1"/>
+<text class="s h" x="72" y="712" font-size="19">Standards without owned infrastructure are advisory.</text>
+<text class="s m" x="72" y="738" font-size="15">Publish the most rigorous benchmark in the world, run it on rented compute, and you have written a strongly worded letter, nothing more.</text>
+</svg>
