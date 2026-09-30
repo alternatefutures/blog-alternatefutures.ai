@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
+// React uses eval() for debugging features in development only; it never does in
+// production. Allowing it in dev keeps the shipped policy strict.
+const isDev = process.env.NODE_ENV !== "production";
+
 const contentSecurityPolicy = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https://*.google-analytics.com",
   "font-src 'self'",
