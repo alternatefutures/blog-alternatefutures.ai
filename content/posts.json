@@ -432,8 +432,8 @@
       "",
       "*Angela Steffens is co-founder and CEO/CTO of Alternate Futures. Olympia, WA. [alternatefutures.ai](https://alternatefutures.ai)*"
     ],
-    "coverImage": "/images/the-loop.svg",
-    "coverAlt": "The loop: module deployed, runs Clouds software, idle capacity sold, network gets denser",
+    "coverImage": "/images/hero-standards.svg",
+    "coverAlt": "Alternate Futures founder essay: I Set Out to Write Standards. I Ended Up Building a Cloud.",
     "status": "draft",
     "authorName": "Angela Steffens",
     "tags": [
@@ -450,7 +450,7 @@
     "reviewNotes": [
       "Partner naming: article names SambaNova. Public naming rights are still listed as to-secure in docs/hardware/sambanova-partnership-terms.md item 12. Confirm before publishing.",
       "Settlement chain is described, not named, at Angela's request. Name it when she is ready.",
-      "Three brand SVG diagrams added (the-loop, layer-ownership, air-vs-liquid). Cover uses the-loop. Amy should sign off on the palette use before publish.",
+      "Hero + three diagrams are authored SVG in brand. Hero follows docs.alternatefutures.ai/brand-guide Geometric Elements: 2 motif types (rings + stars), 4 stars at mixed sizes scattered asymmetrically, rings cropped at corners, decoration at 12-20% opacity on a dark ground, Brand Blue present. Star geometry taken from the real asset library. Amy to sign off (#974).",
       "Brand review plus adversarial fact-check required before status flips to published, per standing policy on buyer-facing claims.",
       "Companion piece 'This Is Not a Manifesto' is slated for Angela's personal site; cross-link once it is live.",
       "Hardware specs re-baseline is open (alternatefutures/admin#969) — article cites no chip model, so it is unaffected, but re-check if that changes."
