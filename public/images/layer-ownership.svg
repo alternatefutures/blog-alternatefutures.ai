@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700" role="img" aria-labelledby="loT loD">
+<title id="loT">Standards have nothing to stand on</title>
+<desc id="loD">The standards layer floats, unanchored, above four solid layers — training data, compute, runtime and hardware — each of which is already owned upstream.</desc>
+<defs>
+  <marker id="dn" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+    <path d="M0 0 L5 10 L10 0" fill="none" stroke="#BE4200" stroke-width="2"/>
+  </marker>
+  <style>
+    .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
+    .h{font-weight:600;fill:#0000AF}.m{font-weight:400;fill:#5C5866}
+    .lay{font-weight:600;fill:#FFFFFF}.sub{font-weight:400;fill:#C3C9FF}
+    .t{font-weight:600;fill:#BE4200}
+  </style>
+</defs>
+<rect width="900" height="700" fill="#F9F5EE"/>
+
+<text class="s h" x="56" y="58" font-size="34">Standards have nothing to stand on</text>
+<text class="s m" x="56" y="90" font-size="19">Every layer underneath was already someone else&#8217;s product</text>
+<line x1="56" y1="112" x2="844" y2="112" stroke="#E2DBCD" stroke-width="1"/>
+
+<!-- the weightless layer -->
+<rect x="56" y="142" width="672" height="66" rx="8" fill="none" stroke="#BE4200" stroke-width="2.5" stroke-dasharray="9 7"/>
+<text class="s t" x="84" y="183" font-size="25">The standards you want to set</text>
+<text class="s t" x="756" y="170" font-size="16">no</text>
+<text class="s t" x="756" y="190" font-size="16">anchor</text>
+
+<path d="M392 214 V238" stroke="#BE4200" stroke-width="2.5" stroke-dasharray="5 5" fill="none"/>
+<path d="M383 234 L392 246 L401 234" stroke="#BE4200" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- the owned stack -->
+<g>
+  <rect x="56" y="254" width="672" height="84" rx="8" fill="#000AFF"/>
+  <text class="s lay" x="84" y="292" font-size="26">Training data</text>
+  <text class="s sub" x="84" y="320" font-size="19">someone else&#8217;s balance sheet</text>
+</g>
+<g>
+  <rect x="56" y="348" width="672" height="84" rx="8" fill="#000AFF"/>
+  <text class="s lay" x="84" y="386" font-size="26">Compute</text>
+  <text class="s sub" x="84" y="414" font-size="19">priced by three companies</text>
+</g>
+<g>
+  <rect x="56" y="442" width="672" height="84" rx="8" fill="#000AFF"/>
+  <text class="s lay" x="84" y="480" font-size="26">Runtime</text>
+  <text class="s sub" x="84" y="508" font-size="19">an SDK that gets acquired</text>
+</g>
+<g>
+  <rect x="56" y="536" width="672" height="84" rx="8" fill="#0000AF"/>
+  <text class="s lay" x="84" y="574" font-size="26">Hardware</text>
+  <text class="s sub" x="84" y="602" font-size="19">a power contract and a jurisdiction</text>
+</g>
+
+<line x1="756" y1="254" x2="756" y2="620" stroke="#BE4200" stroke-width="2.5"/>
+<path d="M756 254 h-12 M756 620 h-12" stroke="#BE4200" stroke-width="2.5"/>
+<text class="s t" x="790" y="437" font-size="17" text-anchor="middle" letter-spacing=".1em" transform="rotate(90 790 437)">OWNED UPSTREAM</text>
+
+<line x1="56" y1="650" x2="844" y2="650" stroke="#E2DBCD" stroke-width="1"/>
+<text class="s h" x="56" y="682" font-size="21">Publish the benchmark, rent the compute, and you have written a letter.</text>
+</svg>
