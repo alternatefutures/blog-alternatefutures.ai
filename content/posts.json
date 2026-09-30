@@ -348,7 +348,7 @@
       "",
       "What that surfaced: an agent that can't deploy is a chatbot. The moment an agent does real work it needs the full kit — compute it can start and stop, storage it can address, an identity it can authenticate with, a budget it can spend against, and a boundary it can't cross. At agent granularity: thousands of short-lived workloads, not a dozen long-lived ones.",
       "",
-      "The hyperscalers will serve that. Expensively, through a control plane designed for a human clicking a console, wrapped in an API the agent has to impersonate a human to use. We want the other thing — where the agent is the first-class user, `acc services deploy` is as natural for a machine to call as for me to type, and the cost of being wrong about capacity is small enough to experiment with.",
+      "The hyperscalers will serve that. Expensively, through a control plane designed for a human clicking a console, wrapped in an API the agent has to impersonate a human to use. We want the other thing — where the agent is the first-class user, `clouds services deploy` is as natural for a machine to call as for me to type, and the cost of being wrong about capacity is small enough to experiment with.",
       "",
       "Our runtime is Apache 2.0 and runs locally, on your servers, or on decentralized compute. Models work three ways: bring your own provider keys, run on our open-model inference, or stand up inference of your own. Your agent definitions and memory export cleanly. The most valuable thing an agent accumulates is its memory — if you can't take it with you, you don't own the agent, you're renting it. Removing that switching cost is a deliberate choice to compete on being good rather than on being hard to leave.",
       "",
