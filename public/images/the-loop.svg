@@ -1,62 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-labelledby="loopTitle loopDesc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" width="900" height="720" role="img" aria-labelledby="loopTitle loopDesc">
 <title id="loopTitle">The loop</title>
 <desc id="loopDesc">A module is deployed, runs Clouds software, sells its idle capacity, which makes the network denser, which makes the next module easier to justify.</desc>
 <defs>
-  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
     <path d="M0 0 L10 5 L0 10 z" fill="#000AFF"/>
   </marker>
   <style>
     .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
-    .h{font-weight:600;fill:#0000AF}
-    .n{font-weight:600;fill:#BE4200;letter-spacing:.08em}
-    .b{font-weight:600;fill:#14131A}
-    .m{font-weight:400;fill:#5C5866}
-    .e{font-weight:500;fill:#000AFF}
+    .h{font-weight:600;fill:#0000AF}.n{font-weight:600;fill:#BE4200;letter-spacing:.08em}
+    .b{font-weight:600;fill:#14131A}.m{font-weight:400;fill:#4B4B66}.e{font-weight:600;fill:#000AFF}
   </style>
 </defs>
-<rect width="1200" height="800" fill="#F9F5EE"/>
-<text class="s h" x="72" y="76" font-size="30">The loop</text>
-<text class="s m" x="72" y="108" font-size="17">Why the module isn&#8217;t the product</text>
-<line x1="72" y1="132" x2="1128" y2="132" stroke="#E2DBCD" stroke-width="1"/>
+<rect width="900" height="720" fill="#F9F5EE"/>
+<text class="s h" x="56" y="58" font-size="34">The loop</text>
+<text class="s m" x="56" y="90" font-size="19">Why the module isn&#8217;t the product</text>
+<line x1="56" y1="112" x2="844" y2="112" stroke="#E2DBCD" stroke-width="1"/>
 
-<g stroke="#000AFF" stroke-width="2.25" fill="none" marker-end="url(#ah)">
-  <path d="M739 240 Q 906 246 916 378"/>
-  <path d="M916 478 Q 906 616 743 608"/>
-  <path d="M461 608 Q 294 616 284 482"/>
-  <path d="M284 382 Q 294 246 457 240"/>
+<g stroke="#000AFF" stroke-width="2.5" fill="none" marker-end="url(#ah)">
+  <path d="M580 216 Q 712 230 720 368"/>
+  <path d="M720 464 Q 712 602 584 614"/>
+  <path d="M320 616 Q 188 602 180 468"/>
+  <path d="M180 372 Q 188 230 316 216"/>
 </g>
 
-<g>
-  <rect x="465" y="196" width="270" height="88" rx="9" fill="#FFFFFF" stroke="#0000AF" stroke-width="1.5"/>
-  <text class="s n" x="489" y="226" font-size="12">01</text>
-  <text class="s b" x="489" y="249" font-size="19">Module deployed</text>
-  <text class="s m" x="489" y="270" font-size="15">the customer owns the asset</text>
-</g>
-<g>
-  <rect x="781" y="386" width="270" height="88" rx="9" fill="#FFFFFF" stroke="#0000AF" stroke-width="1.5"/>
-  <text class="s n" x="805" y="416" font-size="12">02</text>
-  <text class="s b" x="805" y="439" font-size="19">Runs Clouds software</text>
-  <text class="s m" x="805" y="460" font-size="15">orchestration, billing, policy</text>
-</g>
-<g>
-  <rect x="465" y="564" width="270" height="88" rx="9" fill="#FFFFFF" stroke="#0000AF" stroke-width="1.5"/>
-  <text class="s n" x="489" y="594" font-size="12">03</text>
-  <text class="s b" x="489" y="617" font-size="19">Idle capacity sold</text>
-  <text class="s m" x="489" y="638" font-size="15">revenue back to the owner</text>
-</g>
-<g>
-  <rect x="149" y="386" width="270" height="88" rx="9" fill="#FFFFFF" stroke="#0000AF" stroke-width="1.5"/>
-  <text class="s n" x="173" y="416" font-size="12">04</text>
-  <text class="s b" x="173" y="439" font-size="19">Network gets denser</text>
-  <text class="s m" x="173" y="460" font-size="15">more supply on the platform</text>
-</g>
+<g><rect x="320" y="172" width="260" height="88" rx="9" fill="#C8E0E4"/>
+  <text class="s n" x="342" y="200" font-size="12">01</text>
+  <text class="s h" x="342" y="226" font-size="22">Module deployed</text>
+  <text class="s m" x="342" y="248" font-size="17">the customer owns it</text></g>
+<g><rect x="580" y="372" width="260" height="88" rx="9" fill="#A5B2FF"/>
+  <text class="s n" x="602" y="400" font-size="12">02</text>
+  <text class="s h" x="602" y="426" font-size="22">Runs Clouds</text>
+  <text class="s m" x="602" y="448" font-size="17">orchestration, billing</text></g>
+<g><rect x="320" y="572" width="260" height="88" rx="9" fill="#000AFF"/>
+  <text class="s n" x="342" y="600" font-size="12" fill="#FFC7AA">03</text>
+  <text class="s" x="342" y="626" font-size="22" font-weight="600" fill="#FFFFFF">Idle capacity sold</text>
+  <text class="s" x="342" y="648" font-size="17" fill="#C3C9FF">revenue to the owner</text></g>
+<g><rect x="60" y="372" width="260" height="88" rx="9" fill="#0000AF"/>
+  <text class="s n" x="82" y="400" font-size="12" fill="#FFC7AA">04</text>
+  <text class="s" x="82" y="426" font-size="22" font-weight="600" fill="#FFFFFF">Denser network</text>
+  <text class="s" x="82" y="448" font-size="17" fill="#C3C9FF">more supply, more demand</text></g>
 
-<text class="s e" x="600" y="410" font-size="16" text-anchor="middle">Supply and demand stop being</text>
-<text class="s e" x="600" y="434" font-size="16" text-anchor="middle">two customer bases.</text>
-<text class="s m" x="600" y="460" font-size="15" text-anchor="middle">They become one.</text>
+<text class="s e" x="450" y="404" font-size="16" text-anchor="middle">Supply and demand stop being</text>
+<text class="s e" x="450" y="428" font-size="16" text-anchor="middle">two customer bases.</text>
+<text class="s m" x="450" y="450" font-size="16" text-anchor="middle">They become one.</text>
 
-<text class="s e" x="104" y="192" font-size="15">&#8230;&#8201;and the next module is easier to justify</text>
+<text class="s e" x="76" y="152" font-size="17">&#8230; and the next module is easier to justify</text>
 
-<line x1="72" y1="716" x2="1128" y2="716" stroke="#E2DBCD" stroke-width="1"/>
-<text class="s m" x="72" y="748" font-size="15">Dedicated hardware that sits partly idle is a bad asset. Dedicated hardware that sells its idle hours is a different asset.</text>
+<line x1="56" y1="676" x2="844" y2="676" stroke="#E2DBCD" stroke-width="1"/>
+<text class="s m" x="56" y="706" font-size="16">Hardware that sits partly idle is a bad asset. Hardware that sells its idle hours is a different asset.</text>
 </svg>
