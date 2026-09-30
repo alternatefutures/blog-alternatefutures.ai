@@ -558,6 +558,33 @@ textarea:focus-visible {
   margin: 0.35em 0;
 }
 
+/* Brand guide: solid filled circles are the sanctioned bullet marker. */
+.article-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.article-body ul > li {
+  position: relative;
+  padding-left: 1.6em;
+}
+
+.article-body ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0.15em;
+  top: 0.62em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: var(--blue);
+}
+
+.article-body ul ul > li::before {
+  background: none;
+  border: 2px solid var(--blue);
+}
+
 .article-body a {
   color: var(--blue);
   text-underline-offset: 3px;
