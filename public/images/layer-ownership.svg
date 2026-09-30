@@ -9,6 +9,7 @@
     .s{font-family:'Instrument Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif}
     .h{font-weight:600;fill:#0000AF}.m{font-weight:400;fill:#5C5866}
     .lay{font-weight:600;fill:#FFFFFF}.sub{font-weight:400;fill:#C3C9FF}
+    .layD{font-weight:600;fill:#0000AF}.subD{font-weight:400;fill:#4B4B66}
     .t{font-weight:600;fill:#BE4200}
   </style>
 </defs>
@@ -29,14 +30,14 @@
 
 <!-- the owned stack -->
 <g>
-  <rect x="56" y="254" width="672" height="84" rx="8" fill="#000AFF"/>
-  <text class="s lay" x="84" y="292" font-size="26">Training data</text>
-  <text class="s sub" x="84" y="320" font-size="19">someone else&#8217;s balance sheet</text>
+  <rect x="56" y="254" width="672" height="84" rx="8" fill="#C8E0E4"/>
+  <text class="s layD" x="84" y="292" font-size="26">Training data</text>
+  <text class="s subD" x="84" y="320" font-size="19">someone else&#8217;s balance sheet</text>
 </g>
 <g>
-  <rect x="56" y="348" width="672" height="84" rx="8" fill="#000AFF"/>
-  <text class="s lay" x="84" y="386" font-size="26">Compute</text>
-  <text class="s sub" x="84" y="414" font-size="19">priced by three companies</text>
+  <rect x="56" y="348" width="672" height="84" rx="8" fill="#A5B2FF"/>
+  <text class="s layD" x="84" y="386" font-size="26">Compute</text>
+  <text class="s subD" x="84" y="414" font-size="19">priced by three companies</text>
 </g>
 <g>
   <rect x="56" y="442" width="672" height="84" rx="8" fill="#000AFF"/>
