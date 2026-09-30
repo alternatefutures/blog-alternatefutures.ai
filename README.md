@@ -14,6 +14,12 @@ npm run dev
 
 The review desk edits `content/posts.json` directly. Drafts are visible in local development and excluded from production builds. Change a post to `published`, save it, commit the content change, and deploy to publish it.
 
+Drafts can also be reviewed on production without being published, at
+`/preview/<slug>?token=<BLOG_PREVIEW_TOKEN>`. Preview pages are `noindex`, never cached,
+excluded from the index, sitemap and feed, and return the same 404 for a wrong token as
+for a missing post so they cannot be enumerated. Leave `BLOG_PREVIEW_TOKEN` unset to turn
+previews off entirely.
+
 The admin and its write endpoints deliberately return unavailable responses in production. Add provider-appropriate authentication before enabling remote editing; the initial publishing workflow is local review plus Git.
 
 ## Content model

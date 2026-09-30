@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, PencilLine } from "lucide-react";
-import { MarkdownArticle } from "@/components/MarkdownArticle";
+import { ArticleView } from "@/components/ArticleView";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import {
-  formatPostDate,
-  getAllPosts,
-  getPostBySlug,
-  isLocallyReviewable,
-} from "@/lib/posts";
+import { getAllPosts, getPostBySlug, isLocallyReviewable } from "@/lib/posts";
 
 interface PostPageProps {
   params: Promise<{ slug: string }>;
@@ -50,53 +42,11 @@ export default async function PostPage({ params }: PostPageProps) {
   const post = getPostBySlug(slug);
   if (!post || !isLocallyReviewable(post)) notFound();
 
-  const showAdmin = process.env.NODE_ENV === "development";
-
   return (
     <div className="site-shell">
       <SiteHeader />
       <main className="article-page">
-        <article>
-          <div className="article-topline">
-            <Link href="/" className="back-link">
-              <ArrowLeft size={16} /> Back to all posts
-            </Link>
-            {showAdmin && (
-              <Link href={`/admin/posts/${post.slug}`} className="edit-link">
-                <PencilLine size={15} /> Edit draft
-              </Link>
-            )}
-          </div>
-
-          <header className="article-header">
-            <div className="article-tags">
-              {post.tags.map((tag) => <span key={tag}>{tag}</span>)}
-              {post.status === "draft" && <span className="draft-label">Draft preview</span>}
-            </div>
-            <h1>{post.title}</h1>
-            <p className="article-dek">{post.excerpt}</p>
-            <div className="article-meta">
-              <span>{post.authorName}</span>
-              <span>{formatPostDate(post)}</span>
-              <span>{post.readingTimeMin} min read</span>
-            </div>
-          </header>
-
-          <figure className="article-cover">
-            <Image
-              src={post.coverImage}
-              alt={post.coverAlt}
-              width={1800}
-              height={1000}
-              sizes="(max-width: 1000px) 100vw, 1000px"
-              priority
-              unoptimized={post.coverImage.endsWith(".svg")}
-            />
-            <figcaption>{post.coverAlt}</figcaption>
-          </figure>
-
-          <MarkdownArticle content={post.content} />
-        </article>
+        <ArticleView post={post} showAdmin={process.env.NODE_ENV === "development"} />
       </main>
       <SiteFooter />
     </div>

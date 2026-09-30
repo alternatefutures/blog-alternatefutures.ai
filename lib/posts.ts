@@ -1,3 +1,4 @@
+import { timingSafeEqual } from "node:crypto";
 import postsData from "@/content/posts.json";
 import type { BlogPost } from "@/lib/types";
 
@@ -46,4 +47,20 @@ export function formatPostDate(post: BlogPost): string {
     day: "numeric",
     year: "numeric",
   }).format(new Date(value));
+}
+
+/**
+ * Draft previews on production.
+ *
+ * Drafts are never listed, never in the sitemap, never in the feed, and always
+ * noindex. They are reachable only at /preview/<slug> with a matching token.
+ * Fails closed: with BLOG_PREVIEW_TOKEN unset, previews are off entirely.
+ */
+export function isPreviewTokenValid(token: string | undefined): boolean {
+  const expected = process.env.BLOG_PREVIEW_TOKEN;
+  if (!expected || !token) return false;
+  const a = Buffer.from(token);
+  const b = Buffer.from(expected);
+  if (a.length !== b.length) return false;
+  return timingSafeEqual(a, b);
 }
