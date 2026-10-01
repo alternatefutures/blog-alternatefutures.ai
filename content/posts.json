@@ -337,6 +337,7 @@
       "So the endpoint isn’t a better universal model. It’s individualized ones — software interfaces, models included, shaped to the specific human using them.",
       "",
       "Which is also why the alignment argument and the infrastructure argument are the same argument. A model per person is the exact opposite of one enormous model served to everybody from a handful of datacenters. It needs inference that is cheap, distributed, close to the person, and not owned by a company whose margin depends on centralizing it.",
+      "",
       "That's the platform — the Human Alignment Platform. It's still the point.",
       "",
       "## Why that turned into infrastructure",
