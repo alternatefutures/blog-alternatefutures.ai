@@ -175,17 +175,70 @@ textarea:focus-visible {
   padding-bottom: 2px;
 }
 
+/* Masthead: rings cropped at the upper corner + scattered stars — the two
+   motif types the brand guide allows in one composition, at 14–26% opacity. */
 .blog-intro {
+  position: relative;
   max-width: var(--content);
   margin: 0 auto;
-  min-height: 340px;
-  padding: 62px 24px 58px;
+  padding: 54px 24px 58px;
   display: grid;
-  grid-template-columns: 1fr 0.72fr;
-  grid-template-areas: "eyebrow eyebrow" "title copy";
-  column-gap: 72px;
-  align-items: end;
-  border-bottom: 1px solid var(--ink);
+  grid-template-columns: 1fr;
+  grid-template-areas: "eyebrow" "copy";
+  row-gap: 20px;
+  overflow: hidden;
+}
+
+.blog-intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -40px;
+  width: 520px;
+  height: 360px;
+  background: url("/brand/masthead-accent.svg") no-repeat top right;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blog-intro > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Narrow screens: the accent sits behind the copy, so pull it back. */
+@media (max-width: 760px) {
+  .blog-intro::before {
+    width: 300px;
+    height: 210px;
+    right: -70px;
+    opacity: 0.55;
+  }
+}
+
+/* Waves are the brand's section divider. Full width, 20% opacity. */
+/* Waves are the brand's section divider and always span the full width.
+   Tiled at natural proportion so the wave keeps its shape. */
+.wave-divider {
+  width: calc(100% - 48px);
+  max-width: var(--content);
+  height: 30px;
+  margin: 0 auto 12px;
+  background: url("/brand/wave-blue-20.svg") repeat-x left center / auto 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 .eyebrow-row {
@@ -231,16 +284,17 @@ textarea:focus-visible {
 .blog-intro > p {
   grid-area: copy;
   margin: 0;
-  max-width: 460px;
+  max-width: 760px;
+  color: var(--blue);
   font-family: "Instrument Serif", serif;
-  font-size: 25px;
-  line-height: 1.25;
+  font-size: clamp(30px, 3.4vw, 42px);
+  line-height: 1.18;
 }
 
 .post-list {
   max-width: var(--content);
   margin: 0 auto;
-  padding: 42px 24px 84px;
+  padding: 30px 24px 84px;
 }
 
 .post-card {
@@ -1041,12 +1095,6 @@ textarea:focus-visible {
 }
 
 @media (max-width: 900px) {
-  .blog-intro {
-    grid-template-columns: 1fr;
-    grid-template-areas: "eyebrow" "title" "copy";
-    row-gap: 32px;
-  }
-
   .blog-intro > p {
     max-width: 680px;
   }
@@ -1105,12 +1153,8 @@ textarea:focus-visible {
     padding: 44px 0;
   }
 
-  .blog-intro h1 {
-    font-size: 54px;
-  }
-
   .blog-intro > p {
-    font-size: 21px;
+    font-size: 26px;
   }
 
   .post-list {

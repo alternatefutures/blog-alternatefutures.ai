@@ -13,16 +13,20 @@ export default function Home() {
       <SiteHeader />
       <main>
         <section className="blog-intro">
-          <div className="eyebrow-row">
-            <span>Field notes / 01</span>
-            {isReviewMode && <span className="review-mode">Local review mode</span>}
-          </div>
-          <h1>Alternate Futures Blog</h1>
+          {isReviewMode && (
+            <div className="eyebrow-row">
+              <span className="review-mode">Local review mode</span>
+            </div>
+          )}
+          {/* Kept for document structure and SEO; the nav carries the visible brand. */}
+          <h1 className="sr-only">Alternate Futures Blog</h1>
           <p>
             Practical writing about AI infrastructure, distributed systems, and
             the choices that shape how technology serves people.
           </p>
         </section>
+
+        <div className="wave-divider" aria-hidden="true" />
 
         {featured ? (
           <section className="post-list" aria-label="Articles">
